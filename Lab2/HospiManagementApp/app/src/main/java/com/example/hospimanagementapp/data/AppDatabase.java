@@ -4,15 +4,21 @@ import androidx.room.Database;          // Room annotation to define the DB sche
 import androidx.room.Room;              // Factory for creating Room databases
 import androidx.room.RoomDatabase;      // Base class for Room databases
 import android.content.Context;         // Needed to build the DB with an app Context
+import androidx.room.TypeConverters;    // Room annotation to define a type converter
+
 
 import com.example.hospimanagementapp.data.PatientDao; // DAO for Patient operations
 import com.example.hospimanagementapp.data.StaffDao;   // DAO for Staff operations
 import com.example.hospimanagementapp.data.Patient; // Entity mapped to a table
 import com.example.hospimanagementapp.data.Staff;   // Entity mapped to a table
+import com.example.hospimanagementapp.data.AppointmentDao;
+import com.example.hospimanagementapp.data.Appointment;
+
 
 @Database(entities = {Patient.class, Staff.class, Appointment.class}, version = 2, exportSchema = false)
 //  Declares the Room database: which entities it manages, the schema version,
 //   and whether to export the schema as JSON for tooling (false = do not export).
+@TypeConverters({Staff.class})
 public abstract class AppDatabase extends RoomDatabase { // Concrete DB extends RoomDatabase
 
     // Singleton instance (volatile ensures visibility across threads)

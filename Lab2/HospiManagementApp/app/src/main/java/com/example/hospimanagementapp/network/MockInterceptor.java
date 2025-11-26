@@ -7,9 +7,11 @@ import okhttp3.Protocol;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 import okhttp3.Request;
+import okio.Buffer;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+
 import java.nio.charset.StandardCharsets;
 
 public class MockInterceptor implements Interceptor {
@@ -29,7 +31,17 @@ public class MockInterceptor implements Interceptor {
             if (path.endsWith("/appointments/today")) {
                 json = readAsset("mock/appointments_today.json");
             } else if (path.endsWith("/appointments/bookOrReschedule")) {
-                json = readAsset("mock/booking_success.json");
+                final Buffer buffer = new Buffer();
+                req.body().writeTo(buffer);
+                String body = buffer.readUtf8();
+
+                return new Response.Builder()
+                        .code(200).message("OK")
+                        .request(req)
+                        .protocol(Protocol.HTTP_1_1)
+                        .body(ResponseBody.create(body, MediaType.get("application/json")))
+                        .build();
+
             }
 
             return new Response.Builder()

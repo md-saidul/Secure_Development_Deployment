@@ -6,9 +6,9 @@ import android.content.Intent;  // Used to navigate between Activities
 import android.os.Bundle;       // Holds saved instance state for lifecycle
 import android.widget.Button;   // UI widget: Button
 import android.widget.TextView; // UI widget: TextView
+import android.widget.Toast;
 
 import com.example.hospimanagementapp.ui.AdminLoginActivity;        // Screen for admin sign-in
-import com.example.hospimanagementapp.ui.AdminPortalActivity;       // Screen for admin features (opened after login)
 import com.example.hospimanagementapp.ui.AppointmentActivity;
 import com.example.hospimanagementapp.ui.PatientRegistrationActivity; // Screen to register patients
 import com.example.hospimanagementapp.util.SessionManager;          // Helper for simple session storage
@@ -43,8 +43,15 @@ public class MainActivity extends AppCompatActivity { // Entry Activity shown at
             startActivity(i);
         });
 
-        btnAppointments.setOnClickListener(v ->
-                startActivity(new Intent(this, AppointmentActivity.class)));
+        btnAppointments.setOnClickListener(v -> {
+            String role = SessionManager.getCurrentRole(this);
+            if (role == null || role.isEmpty()) {
+                Toast.makeText(this, "You are not logged in. Please log in first.", Toast.LENGTH_SHORT).show();
+                return;
+            } else {
+                startActivity(new Intent(this, AppointmentActivity.class));
+            }
+        });
 
         // Clear session and update the header (acts like a simple "log out")
         btnLogout.setOnClickListener(v -> {

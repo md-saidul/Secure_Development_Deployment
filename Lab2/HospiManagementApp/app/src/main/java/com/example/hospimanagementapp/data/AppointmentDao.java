@@ -13,7 +13,7 @@ import java.util.List;
 @Dao
 
 public interface AppointmentDao {
-    @Insert(onConflict = OnConflictStrategy.ABORT)
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
     long insert(Appointment appt);
 
     @Update

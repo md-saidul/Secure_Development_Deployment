@@ -1,5 +1,6 @@
 package com.example.hospimanagementapp.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -27,15 +28,20 @@ public class AppointmentActivity extends AppCompatActivity {
         }
 
         new BiometricLoginCoordinator().authenticate(this, new BiometricLoginCoordinator.Callback() {
-            @Override public void onSuccess() {
+            @Override
+            public void onSuccess() {
                 if (savedInstanceState == null) {
                     getSupportFragmentManager().beginTransaction()
                             .replace(R.id.appointmentContainer, new AppointmentListFragment())
                             .commit();
                 }
             }
-            @Override public void onFailure(String reason) {
+            @Override
+            public void onFailure(String reason) {
                 Toast.makeText(AppointmentActivity.this, "Biometric required: " + reason, Toast.LENGTH_LONG).show();
+
+                Intent i = new Intent(AppointmentActivity.this, AdminLoginActivity.class);
+                startActivity(i);
                 finish();
             }
         });
