@@ -37,6 +37,7 @@ public class StaffAdapter extends RecyclerView.Adapter<StaffAdapter.VH> { // Ada
         h.tvName.setText(s.fullName);     // Show staff member’s name
         h.tvEmail.setText(s.email);       // Show staff member’s email
         h.tvRole.setText(s.role.name());  // Show role (enum name as text)
+        h.tvClinic.setText("Clinic: " + (s.clinic == null ? "N/A" : s.clinic));
     }
 
     @Override
@@ -47,13 +48,14 @@ public class StaffAdapter extends RecyclerView.Adapter<StaffAdapter.VH> { // Ada
 
     // ViewHolder caches view references for each row to avoid repeated findViewById calls
     static class VH extends RecyclerView.ViewHolder {
-        TextView tvName, tvEmail, tvRole; // Row widgets for name, email, and role
+        TextView tvName, tvEmail, tvRole, tvClinic; // Row widgets for name, email, and role
 
         VH(@NonNull View itemView) { // Constructed with the inflated row view
             super(itemView);                                  // Pass to base class
             tvName = itemView.findViewById(R.id.tvStaffName); // Bind TextView for name
             tvEmail = itemView.findViewById(R.id.tvStaffEmail); // Bind TextView for email
             tvRole = itemView.findViewById(R.id.tvStaffRole); // Bind TextView for role
+            tvClinic = itemView.findViewById(R.id.tvStaffClinic); // Bind TextView for clinic
         }
     }
 }

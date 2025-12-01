@@ -26,7 +26,7 @@ import java.util.concurrent.Executors; // Run DB work off the main thread
 public class AdminPortalActivity extends AppCompatActivity { // Admin portal: manage staff accounts
 
     private EditText etName, etEmail, etPin;   // Inputs for staff name/email and admin PIN (if role is ADMIN)
-    private Spinner spRole;                    // Role picker (ADMIN/STAFF/etc.)
+    private Spinner spRole, spClinic;                    // Role picker (ADMIN/STAFF/etc.)
     private Button btnRegisterStaff, btnRefresh; // Actions to register and refresh the list
     private RecyclerView rvStaff;              // Displays the current staff members
 
@@ -40,6 +40,7 @@ public class AdminPortalActivity extends AppCompatActivity { // Admin portal: ma
         etEmail = findViewById(R.id.etStaffEmail);
         etPin = findViewById(R.id.etAdminSetupPin);
         spRole = findViewById(R.id.spRole);
+        spClinic = findViewById(R.id.spClinic);
         btnRegisterStaff = findViewById(R.id.btnRegisterStaff);
         btnRefresh = findViewById(R.id.btnRefreshList);
         rvStaff = findViewById(R.id.rvStaff);
@@ -51,6 +52,12 @@ public class AdminPortalActivity extends AppCompatActivity { // Admin portal: ma
                 this,
                 android.R.layout.simple_spinner_dropdown_item,
                 Arrays.asList(Staff.Role.values())
+        ));
+
+        spClinic.setAdapter(new ArrayAdapter<>(
+                this,
+                android.R.layout.simple_spinner_dropdown_item,
+                new String[]{"Surgery A", "Surgery B"}
         ));
 
         // Wire up button actions
@@ -77,6 +84,7 @@ public class AdminPortalActivity extends AppCompatActivity { // Admin portal: ma
         String email = etEmail.getText().toString().trim();   // Staff email (should be unique)
         Staff.Role role = (Staff.Role) spRole.getSelectedItem(); // Selected role from Spinner
         String pin = etPin.getText().toString().trim();       // Admin PIN (required only for ADMIN)
+        String clinic = spClinic.getSelectedItem().toString();
 
         // Basic required-field checks
         if (TextUtils.isEmpty(name) || TextUtils.isEmpty(email)) {
@@ -98,6 +106,7 @@ public class AdminPortalActivity extends AppCompatActivity { // Admin portal: ma
                 s.email = email;
                 s.role = role;
                 s.adminPin = (role == Staff.Role.ADMIN) ? pin : null; // Store PIN only for admins
+                s.clinic = clinic;
 
                 dao.insert(s); // Persist to Room (unique constraints may throw)
 

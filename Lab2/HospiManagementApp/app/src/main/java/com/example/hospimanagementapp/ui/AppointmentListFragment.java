@@ -42,6 +42,7 @@ public class AppointmentListFragment extends Fragment {
         spClinic.setAdapter(clinics);
 
         v.findViewById(R.id.btnRefresh).setOnClickListener(b -> loadData());
+
         v.findViewById(R.id.btnNewAppointment).setOnClickListener(b -> {
             if (!RbacPolicyEvaluator.canBookOrReschedule(requireContext())) {
                 Toast.makeText(getContext(), "You are not permitted to book or reschedule appointments.", Toast.LENGTH_LONG).show();
@@ -52,8 +53,10 @@ public class AppointmentListFragment extends Fragment {
             newAppt.id = 0L;
             newAppt.patientNhsNumber = "";
 
-            newAppt.startTime = System.currentTimeMillis();
-            newAppt.endTime = System.currentTimeMillis() + 30 * 60 * 1000;
+            long now = System.currentTimeMillis();
+
+            newAppt.startTime = now;
+            newAppt.endTime = now + 30 * 60 * 1000;
             newAppt.clinicianId = 0L;
             newAppt.clinicianName = "Unassigned";
 
@@ -79,7 +82,9 @@ public class AppointmentListFragment extends Fragment {
 
     private void loadData() {
         progress.setVisibility(View.VISIBLE);
-        String clinic = spClinic.getSelectedItemPosition() == 0 ? null : spClinic.getSelectedItem().toString();
+        String clinic = spClinic.getSelectedItemPosition() == 0
+                ? ""
+                : spClinic.getSelectedItem().toString();
 
         Executors.newSingleThreadExecutor().execute(() -> {
             try {

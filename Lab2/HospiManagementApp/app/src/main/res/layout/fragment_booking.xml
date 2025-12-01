@@ -2,6 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <LinearLayout
         android:orientation="vertical"
         android:padding="16dp"
@@ -15,6 +16,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+        <Spinner
+            android:id="@+id/spClinician"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/tvClinic"
+            android:text="Clinic: "
+            android:paddingTop="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <TextView
             android:id="@+id/tvNHS"
             android:textStyle="bold"
@@ -25,7 +39,7 @@
 
         <EditText
             android:id="@+id/etNhsBooking"
-            android:hint="NHS Number"
+            android:hint="NHS Number (10 digits)"
             android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="48dp"/>
@@ -38,27 +52,31 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <EditText
-            android:id="@+id/etStartMillis"
-            android:hint="Start time"
-            android:inputType="number"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"/>
+        <Button
+            android:id="@+id/btnStartDate"
+            android:text="Select Start Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnStartTime"
+            android:text="Select Start Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
         <TextView
             android:id="@+id/tvEndTime"
             android:textStyle="bold"
             android:paddingTop="15dp"
-            android:text="End Time (15 mins after start)"
+            android:text="End Time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <EditText
-            android:id="@+id/etEndMillis"
-            android:hint="End time"
-            android:inputType="number"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"/>
+        <Button
+            android:id="@+id/btnEndTime"
+            android:text="Select End Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
         <Button
             android:id="@+id/btnConfirmBooking"

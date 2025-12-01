@@ -6,21 +6,19 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 
-import com.example.hospimanagementapp.data.Appointment;
-
 import java.util.List;
 
 @Dao
 
 public interface AppointmentDao {
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    @Insert(onConflict = OnConflictStrategy.ABORT)
     long insert(Appointment appt);
 
     @Update
     int update(Appointment appt);
 
-    @Query("SELECT * FROM appointments WHERE startTime BETWEEN :start AND :end ORDER BY startTime ASC")
-    List<Appointment> findBetween(long start, long end);
+    @Query("SELECT * FROM appointments WHERE (:clinic = '' OR clinic = :clinic) AND startTime BETWEEN :start AND :end ORDER BY startTime ASC")
+    List<Appointment> findBetween(long start, long end, String clinic);
 
     @Query("SELECT * FROM appointments WHERE clinicianId = :clinicianId AND "
             + "( (startTime < :newEnd AND endTime > :newStart) )")

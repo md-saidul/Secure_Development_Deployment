@@ -2,9 +2,6 @@ package com.example.hospimanagementapp.data;
 
 import android.content.Context;
 
-import com.example.hospimanagementapp.data.AppDatabase;
-import com.example.hospimanagementapp.data.AppointmentDao;
-import com.example.hospimanagementapp.data.Appointment;
 import com.example.hospimanagementapp.network.ApiClient;
 import com.example.hospimanagementapp.network.AppointmentDto;
 
@@ -23,13 +20,12 @@ public class AppointmentRepository {
     }
 
     public List<Appointment> getTodaysAppointments(String clinic, long start, long end) throws Exception {
-        // fetch mock network first
+        // Fetch mock network first
         Response<List<AppointmentDto>> resp = api.appointmentAPI().getTodaysAppointments(clinic).execute();
         List<Appointment> mapped = new ArrayList<>();
         if (resp.isSuccessful() && resp.body() != null) {
             for (AppointmentDto dto : resp.body()) {
-                Appointment a = map(dto);
-                mapped.add(a);
+                mapped.add(map(dto));
             }
         }
         // cache to DB (simplified: insert if none today)
@@ -37,7 +33,7 @@ public class AppointmentRepository {
             dao.insert(a);
         }
         // return from DB (source of truth)
-        return dao.findBetween(start, end);
+        return dao.findBetween(start, end, clinic);
     }
 
     public Appointment bookOrReschedule(Appointment appt) throws Exception {
@@ -57,7 +53,11 @@ public class AppointmentRepository {
             if (saved.id == 0) { // mock may return id=0, keep local
                 saved.id = appt.id;
             }
-            if (appt.id == 0) dao.insert(saved); else dao.update(saved);
+            if (saved.id == 0) {
+                dao.insert(saved);
+            } else {
+                dao.update(saved);
+            }
             return saved;
         } else {
             throw new IllegalStateException("Booking failed");

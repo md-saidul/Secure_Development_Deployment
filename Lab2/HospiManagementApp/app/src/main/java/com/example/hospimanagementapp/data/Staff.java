@@ -11,11 +11,17 @@ public class Staff {
 
     public enum Role { ADMIN, CLINICIAN, RECEPTION }
 
-    @PrimaryKey(autoGenerate = true) public long id;
+    @PrimaryKey(autoGenerate = true)
+    public long id;
     public String fullName;
-    @NonNull public String email;
-    @NonNull public Role role;
+
+    @NonNull
+    public String email;
+    @NonNull
+    public Role role;
     public String adminPin; // only for ADMIN
+
+    public String clinic;
 
     // ----- Inline converters (no new class) -----
     @TypeConverter

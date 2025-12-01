@@ -1,6 +1,9 @@
 package com.example.hospimanagementapp.network;
 
 import android.content.Context;
+
+import com.google.gson.Gson;
+
 import okhttp3.Interceptor;
 import okhttp3.MediaType;
 import okhttp3.Protocol;
@@ -32,7 +35,9 @@ public class MockInterceptor implements Interceptor {
                 json = readAsset("mock/appointments_today.json");
             } else if (path.endsWith("/appointments/bookOrReschedule")) {
                 final Buffer buffer = new Buffer();
-                req.body().writeTo(buffer);
+                if (req.body() != null) {
+                    req.body().writeTo(buffer);
+                }
                 String body = buffer.readUtf8();
 
                 return new Response.Builder()
@@ -41,7 +46,6 @@ public class MockInterceptor implements Interceptor {
                         .protocol(Protocol.HTTP_1_1)
                         .body(ResponseBody.create(body, MediaType.get("application/json")))
                         .build();
-
             }
 
             return new Response.Builder()
@@ -57,7 +61,8 @@ public class MockInterceptor implements Interceptor {
                     .message("Mock failure")
                     .request(chain.request())
                     .protocol(Protocol.HTTP_1_1)
-                    .body(ResponseBody.create("{\"error\":\"mock\"}", MediaType.get("application/json")))
+                    .body(ResponseBody.create("{\"error\":\"mock\"}",
+                            MediaType.get("application/json")))
                     .build();
         }
     }

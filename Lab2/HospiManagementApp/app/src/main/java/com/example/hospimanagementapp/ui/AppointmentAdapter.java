@@ -43,7 +43,10 @@ public class AppointmentAdapter extends RecyclerView.Adapter<AppointmentAdapter.
         h.itemView.setOnClickListener(v -> clicker.onClick(a));
     }
 
-    @Override public int getItemCount() { return data == null ? 0 : data.size(); }
+    @Override public int getItemCount() { return data == null
+            ? 0
+            : data.size();
+    }
 
     static class VH extends RecyclerView.ViewHolder {
         TextView tvPatient, tvClinician, tvTime;
