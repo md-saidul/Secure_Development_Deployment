@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/item_staff.xml",
+        "source": "com.example.hospimanagementapp-main-48:/layout/item_staff.xml"
+    },
+    {
+        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_vitals.xml",
+        "source": "com.example.hospimanagementapp-main-48:/layout/activity_vitals.xml"
+    },
+    {
+        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_patient_summary.xml",
+        "source": "com.example.hospimanagementapp-main-48:/layout/activity_patient_summary.xml"
+    },
+    {
+        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/fragment_appointment_list.xml",
+        "source": "com.example.hospimanagementapp-main-48:/layout/fragment_appointment_list.xml"
+    },
+    {
+        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/item_appointment.xml",
+        "source": "com.example.hospimanagementapp-main-48:/layout/item_appointment.xml"
+    },
+    {
+        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_patient_registration.xml",
+        "source": "com.example.hospimanagementapp-main-48:/layout/activity_patient_registration.xml"
+    },
+    {
+        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/item_vitals.xml",
+        "source": "com.example.hospimanagementapp-main-48:/layout/item_vitals.xml"
+    },
+    {
+        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_admin_portal.xml",
+        "source": "com.example.hospimanagementapp-main-48:/layout/activity_admin_portal.xml"
+    },
+    {
+        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_admin_login.xml",
+        "source": "com.example.hospimanagementapp-main-48:/layout/activity_admin_login.xml"
+    },
+    {
+        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_appointment.xml",
+        "source": "com.example.hospimanagementapp-main-48:/layout/activity_appointment.xml"
+    },
+    {
+        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_main.xml",
+        "source": "com.example.hospimanagementapp-main-48:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/fragment_booking.xml",
+        "source": "com.example.hospimanagementapp-main-48:/layout/fragment_booking.xml"
+    }
+]
