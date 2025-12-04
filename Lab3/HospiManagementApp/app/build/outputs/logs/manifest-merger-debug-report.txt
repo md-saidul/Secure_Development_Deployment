@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:2:1-52:12
-INJECTED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:2:1-52:12
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [androidx.databinding:viewbinding:8.13.0] C:\Users\saidu\.gradle\caches\8.13\transforms\28ff6547cedc2eb95da50f3674289c7a\transformed\viewbinding-8.13.0\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\saidu\.gradle\caches\8.13\transforms\1019c923486abac2345e2c5058e07433\transformed\material-1.12.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\saidu\.gradle\caches\8.13\transforms\870de2a67c9be5b4f7ba5f2fd672777d\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -63,36 +63,36 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\saidu\.gradle\caches\8.13\tran
 MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\saidu\.gradle\caches\8.13\transforms\97635ec2ae5de7af685fd38b37dba427\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:17:1-56:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\saidu\.gradle\caches\8.13\transforms\c417ccf4ce3815d9c4e1ee7fcc69c027\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:2:1-7:12
 	package
-		INJECTED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml
 	xmlns:tools
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:3:5-51
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
-		INJECTED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:2:11-69
 uses-feature#android.hardware.camera
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:5:5-7:36
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:5:5-7:36
 MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\saidu\.gradle\caches\8.13\transforms\97635ec2ae5de7af685fd38b37dba427\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
 MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\saidu\.gradle\caches\8.13\transforms\97635ec2ae5de7af685fd38b37dba427\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:25:5-27:36
 	android:required
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:7:9-33
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:7:9-33
 	android:name
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:6:9-47
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:6:9-47
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:9:5-67
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:9:5-67
 	android:name
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:9:22-64
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:9:22-64
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:10:5-65
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:10:5-65
 MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\saidu\.gradle\caches\8.13\transforms\97635ec2ae5de7af685fd38b37dba427\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:22:5-65
 MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\saidu\.gradle\caches\8.13\transforms\97635ec2ae5de7af685fd38b37dba427\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:22:5-65
 	android:name
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:10:22-62
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:10:22-62
 application
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:12:5-50:19
-INJECTED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:12:5-50:19
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:12:5-56:19
+INJECTED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:12:5-56:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\saidu\.gradle\caches\8.13\transforms\1019c923486abac2345e2c5058e07433\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\saidu\.gradle\caches\8.13\transforms\1019c923486abac2345e2c5058e07433\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\saidu\.gradle\caches\8.13\transforms\870de2a67c9be5b4f7ba5f2fd672777d\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -116,87 +116,93 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\sa
 MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\saidu\.gradle\caches\8.13\transforms\97635ec2ae5de7af685fd38b37dba427\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:46:5-54:19
 MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\saidu\.gradle\caches\8.13\transforms\97635ec2ae5de7af685fd38b37dba427\transformed\zxing-android-embedded-4.3.0\AndroidManifest.xml:46:5-54:19
 	android:extractNativeLibs
-		INJECTED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\saidu\.gradle\caches\8.13\transforms\e14d9122d45fb71ea63e5eedb2149f5e\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:18:9-35
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:18:9-35
 	android:label
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:15:9-43
 	android:roundIcon
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:17:9-54
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:17:9-54
 	android:icon
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:14:9-43
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:14:9-43
 	android:allowBackup
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:13:9-36
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:13:9-36
 	android:theme
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:19:9-77
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:19:9-77
 	android:networkSecurityConfig
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:16:9-69
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:16:9-69
 activity#com.example.hospimanagementapp.MainActivity
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:21:9-29:20
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:21:9-29:20
 	android:exported
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:23:13-36
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:23:13-36
 	android:name
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:22:13-41
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:22:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:24:13-28:29
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:25:17-69
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:25:25-66
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:27:17-77
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:27:27-74
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:27:27-74
 activity#com.example.hospimanagementapp.ui.PatientRegistrationActivity
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:30:9-33:58
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:30:9-33:58
 	android:parentActivityName
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:33:13-55
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:33:13-55
 	android:exported
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:32:13-37
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:31:13-59
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:31:13-59
 activity#com.example.hospimanagementapp.ui.AdminLoginActivity
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:34:9-37:58
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:34:9-37:58
 	android:parentActivityName
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:37:13-55
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:37:13-55
 	android:exported
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:36:13-37
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:35:13-50
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:35:13-50
 activity#com.example.hospimanagementapp.ui.AdminPortalActivity
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:38:9-41:67
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:38:9-41:67
 	android:parentActivityName
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:41:13-64
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:41:13-64
 	android:exported
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:40:13-37
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:40:13-37
 	android:name
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:39:13-51
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:39:13-51
 activity#com.example.hospimanagementapp.ui.AppointmentActivity
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:42:9-44:40
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:42:9-44:40
 	android:exported
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:44:13-37
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:44:13-37
 	android:name
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:43:13-51
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:43:13-51
 activity#com.example.hospimanagementapp.ui.PatientSummaryActivity
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:45:9-93
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:45:9-46:87
 	android:name
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:45:19-90
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:46:13-84
 activity#com.example.hospimanagementapp.ui.VitalsActivity
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:46:9-85
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:47:9-48:79
 	android:name
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:46:19-82
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:48:13-76
 activity#com.example.hospimanagementapp.ui.BarcodeScannerActivity
-ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:47:9-48:52
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:49:9-51:52
 	android:screenOrientation
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:48:13-49
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:51:13-49
 	android:name
-		ADDED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml:47:19-90
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:50:13-84
+activity#com.example.hospimanagementapp.ui.EditClinicalRecordActivity
+ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:52:9-54:40
+	android:exported
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:54:13-37
+	android:name
+		ADDED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml:53:13-58
 uses-sdk
-INJECTED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:8.13.0] C:\Users\saidu\.gradle\caches\8.13\transforms\28ff6547cedc2eb95da50f3674289c7a\transformed\viewbinding-8.13.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.databinding:viewbinding:8.13.0] C:\Users\saidu\.gradle\caches\8.13\transforms\28ff6547cedc2eb95da50f3674289c7a\transformed\viewbinding-8.13.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\saidu\.gradle\caches\8.13\transforms\1019c923486abac2345e2c5058e07433\transformed\material-1.12.0\AndroidManifest.xml:20:5-44
@@ -314,9 +320,9 @@ MERGED from [com.journeyapps:zxing-android-embedded:4.3.0] C:\Users\saidu\.gradl
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\saidu\.gradle\caches\8.13\transforms\c417ccf4ce3815d9c4e1ee7fcc69c027\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.0] C:\Users\saidu\.gradle\caches\8.13\transforms\c417ccf4ce3815d9c4e1ee7fcc69c027\transformed\annotation-experimental-1.4.0\AndroidManifest.xml:5:5-44
 	android:targetSdkVersion
-		INJECTED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\saidu\Downloads\Backup_Of_Projects-12ed381b9fba3e6f6d5ca7b5ecd46fcca6d7b744\HospitalManagement\HospiManagementApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\saidu\Desktop\Android App Development\HospiManagementApp\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.USE_BIOMETRIC
 ADDED from [androidx.biometric:biometric:1.2.0-alpha05] C:\Users\saidu\.gradle\caches\8.13\transforms\887d7f29e56b35bca9e1b4430a2e254a\transformed\biometric-1.2.0-alpha05\AndroidManifest.xml:22:5-72
 	android:name

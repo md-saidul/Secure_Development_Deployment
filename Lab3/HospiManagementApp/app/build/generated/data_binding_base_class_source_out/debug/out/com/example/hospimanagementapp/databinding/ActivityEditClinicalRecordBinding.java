@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ScrollView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -32,14 +33,27 @@ public final class ActivityEditClinicalRecordBinding implements ViewBinding {
   @NonNull
   public final EditText etMedications;
 
+  @NonNull
+  public final TextView tvAllergies;
+
+  @NonNull
+  public final TextView tvConditions;
+
+  @NonNull
+  public final TextView tvMedications;
+
   private ActivityEditClinicalRecordBinding(@NonNull ScrollView rootView, @NonNull Button btnSave,
       @NonNull EditText etAllergies, @NonNull EditText etConditions,
-      @NonNull EditText etMedications) {
+      @NonNull EditText etMedications, @NonNull TextView tvAllergies,
+      @NonNull TextView tvConditions, @NonNull TextView tvMedications) {
     this.rootView = rootView;
     this.btnSave = btnSave;
     this.etAllergies = etAllergies;
     this.etConditions = etConditions;
     this.etMedications = etMedications;
+    this.tvAllergies = tvAllergies;
+    this.tvConditions = tvConditions;
+    this.tvMedications = tvMedications;
   }
 
   @Override
@@ -93,8 +107,26 @@ public final class ActivityEditClinicalRecordBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvAllergies;
+      TextView tvAllergies = ViewBindings.findChildViewById(rootView, id);
+      if (tvAllergies == null) {
+        break missingId;
+      }
+
+      id = R.id.tvConditions;
+      TextView tvConditions = ViewBindings.findChildViewById(rootView, id);
+      if (tvConditions == null) {
+        break missingId;
+      }
+
+      id = R.id.tvMedications;
+      TextView tvMedications = ViewBindings.findChildViewById(rootView, id);
+      if (tvMedications == null) {
+        break missingId;
+      }
+
       return new ActivityEditClinicalRecordBinding((ScrollView) rootView, btnSave, etAllergies,
-          etConditions, etMedications);
+          etConditions, etMedications, tvAllergies, tvConditions, tvMedications);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

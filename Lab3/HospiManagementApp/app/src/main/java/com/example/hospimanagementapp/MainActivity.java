@@ -23,7 +23,7 @@ import java.util.concurrent.Executors;
 
 public class MainActivity extends AppCompatActivity { // Entry Activity shown at app launch
 
-    private TextView tvWelcome, tvOrText;       // Header showing session state
+    private TextView tvWelcome;       // Header showing session state
     private Button btnPatientRegistration, btnAdminPortal, btnLogout, btnAppointments, btnBarcode, btnPatientVitals; // Main menu buttons
 
     @Override
@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity { // Entry Activity shown at
 
         // Bind views from the layout to fields
         tvWelcome = findViewById(R.id.tvWelcome);
-        tvOrText = findViewById(R.id.tvOrText);
         btnPatientRegistration = findViewById(R.id.btnPatientRegistration);
         btnAdminPortal = findViewById(R.id.btnAdminPortal);
         btnLogout = findViewById(R.id.btnLogout);
@@ -57,17 +56,32 @@ public class MainActivity extends AppCompatActivity { // Entry Activity shown at
         btnAppointments.setOnClickListener(v -> {
             String role = SessionManager.getCurrentRole(this);
             if (role == null || role.isEmpty()) {
-                Toast.makeText(this, "You are not logged in. Please log in first.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Admin privilege required. Please log in first.", Toast.LENGTH_SHORT).show();
                 return;
             } else {
                 startActivity(new Intent(this, AppointmentActivity.class));
             }
         });
 
-        btnBarcode.setOnClickListener(v ->
-            startActivity(new Intent(this, BarcodeScannerActivity.class)));
+        btnBarcode.setOnClickListener(v -> {
+            String role = SessionManager.getCurrentRole(this);
+            if (role == null || role.isEmpty()) {
+                Toast.makeText(this, "Admin privilege required. Please log in first.", Toast.LENGTH_SHORT).show();
+                return;
+            } else {
+                startActivity(new Intent(this, BarcodeScannerActivity.class));
+            }
+        });
 
-        btnPatientVitals.setOnClickListener(v -> showManualNhsDialog());
+        btnPatientVitals.setOnClickListener(v -> {
+            String role = SessionManager.getCurrentRole(this);
+            if (role == null || role.isEmpty()) {
+                Toast.makeText(this, "Admin privilege required. Please log in first.", Toast.LENGTH_SHORT).show();
+                return;
+            } else {
+                showManualNhsDialog();
+            }
+        });
 
         // Clear session and update the header (acts like a simple "log out")
         btnLogout.setOnClickListener(v -> {

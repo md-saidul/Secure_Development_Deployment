@@ -1,54 +1,58 @@
 [
     {
-        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/item_staff.xml",
-        "source": "com.example.hospimanagementapp-main-48:/layout/item_staff.xml"
+        "merged": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-mergeDebugResources-45:\\layout\\activity_edit_clinical_record.xml",
+        "source": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-main-48:\\layout\\activity_edit_clinical_record.xml"
     },
     {
-        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_vitals.xml",
-        "source": "com.example.hospimanagementapp-main-48:/layout/activity_vitals.xml"
+        "merged": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-mergeDebugResources-45:\\layout\\activity_appointment.xml",
+        "source": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-main-48:\\layout\\activity_appointment.xml"
     },
     {
-        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_patient_summary.xml",
-        "source": "com.example.hospimanagementapp-main-48:/layout/activity_patient_summary.xml"
+        "merged": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-mergeDebugResources-45:\\layout\\item_vitals.xml",
+        "source": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-main-48:\\layout\\item_vitals.xml"
     },
     {
-        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/fragment_appointment_list.xml",
-        "source": "com.example.hospimanagementapp-main-48:/layout/fragment_appointment_list.xml"
+        "merged": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-mergeDebugResources-45:\\layout\\activity_vitals.xml",
+        "source": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-main-48:\\layout\\activity_vitals.xml"
     },
     {
-        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/item_appointment.xml",
-        "source": "com.example.hospimanagementapp-main-48:/layout/item_appointment.xml"
+        "merged": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-mergeDebugResources-45:\\layout\\activity_patient_registration.xml",
+        "source": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-main-48:\\layout\\activity_patient_registration.xml"
     },
     {
-        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_patient_registration.xml",
-        "source": "com.example.hospimanagementapp-main-48:/layout/activity_patient_registration.xml"
+        "merged": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-mergeDebugResources-45:\\layout\\item_staff.xml",
+        "source": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-main-48:\\layout\\item_staff.xml"
     },
     {
-        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/item_vitals.xml",
-        "source": "com.example.hospimanagementapp-main-48:/layout/item_vitals.xml"
+        "merged": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-mergeDebugResources-45:\\layout\\item_appointment.xml",
+        "source": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-main-48:\\layout\\item_appointment.xml"
     },
     {
-        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_admin_portal.xml",
-        "source": "com.example.hospimanagementapp-main-48:/layout/activity_admin_portal.xml"
+        "merged": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-mergeDebugResources-45:\\layout\\activity_admin_login.xml",
+        "source": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-main-48:\\layout\\activity_admin_login.xml"
     },
     {
-        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_admin_login.xml",
-        "source": "com.example.hospimanagementapp-main-48:/layout/activity_admin_login.xml"
+        "merged": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-mergeDebugResources-45:\\layout\\activity_admin_portal.xml",
+        "source": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-main-48:\\layout\\activity_admin_portal.xml"
     },
     {
-        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_edit_clinical_record.xml",
-        "source": "com.example.hospimanagementapp-main-48:/layout/activity_edit_clinical_record.xml"
+        "merged": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-mergeDebugResources-45:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-main-48:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_appointment.xml",
-        "source": "com.example.hospimanagementapp-main-48:/layout/activity_appointment.xml"
+        "merged": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-mergeDebugResources-45:\\layout\\activity_patient_summary.xml",
+        "source": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-main-48:\\layout\\activity_patient_summary.xml"
+    },
+    {
+        "merged": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-mergeDebugResources-45:\\layout\\fragment_appointment_list.xml",
+        "source": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-main-48:\\layout\\fragment_appointment_list.xml"
     },
     {
         "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_main.xml",
         "source": "com.example.hospimanagementapp-main-48:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/fragment_booking.xml",
-        "source": "com.example.hospimanagementapp-main-48:/layout/fragment_booking.xml"
+        "merged": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-mergeDebugResources-45:\\layout\\fragment_booking.xml",
+        "source": "C:\\Users\\saidu\\.gradle\\daemon\\8.13\\com.example.hospimanagementapp-main-48:\\layout\\fragment_booking.xml"
     }
 ]

@@ -22,6 +22,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <TextView
+        android:id="@+id/tvAdmin"
+        android:text="FOR ADMINS ONLY"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
     <Button
         android:id="@+id/btnAdminPortal"
         android:text="Admin Portal"
@@ -38,7 +46,7 @@
 
     <Button
         android:id="@+id/btnBarcode"
-        android:text="Barcode Scanner"
+        android:text="Barcode Scanner - Record &amp; Vitals"
         android:layout_marginTop="12dp"
         android:layout_width="match_parent"
         android:layout_height="48dp"/>
@@ -52,7 +60,7 @@
 
     <Button
         android:id="@+id/btnPatientVitals"
-        android:text="Manual Entry - Patient Vitals"
+        android:text="Manual Entry - Record &amp; Vitals"
         android:layout_marginTop="12dp"
         android:layout_width="match_parent"
         android:layout_height="48dp"/>

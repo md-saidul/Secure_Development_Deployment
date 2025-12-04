@@ -42,10 +42,16 @@
         <activity
             android:name=".ui.AppointmentActivity"
             android:exported="false" />
-        <activity android:name="com.example.hospimanagementapp.ui.PatientSummaryActivity" />
-        <activity android:name="com.example.hospimanagementapp.ui.VitalsActivity" />
-        <activity android:name="com.example.hospimanagementapp.ui.BarcodeScannerActivity"
+        <activity
+            android:name="com.example.hospimanagementapp.ui.PatientSummaryActivity" />
+        <activity
+            android:name="com.example.hospimanagementapp.ui.VitalsActivity" />
+        <activity
+            android:name="com.example.hospimanagementapp.ui.BarcodeScannerActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.EditClinicalRecordActivity"
+            android:exported="false" />
 
     </application>
 

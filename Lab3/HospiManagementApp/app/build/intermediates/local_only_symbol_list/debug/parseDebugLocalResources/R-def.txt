@@ -52,6 +52,7 @@ id labelFullName
 id labelNhs
 id labelPhone
 id progress
+id recordContainer
 id rvAppointments
 id rvStaff
 id rvVitals
@@ -59,6 +60,7 @@ id spClinic
 id spClinician
 id spRole
 id toolbar
+id tvAdmin
 id tvAllergies
 id tvClinic
 id tvClinician

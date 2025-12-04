@@ -9,23 +9,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <TextView
+            android:id="@+id/tvConditions"
+            android:text="Conditions"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <EditText
             android:id="@+id/etConditions"
-            android:text="Conditions"
+            android:hint="Conditions"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="48dp"/>
+
+        <TextView
+            android:id="@+id/tvAllergies"
+            android:text="Allergies"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
 
         <EditText
             android:id="@+id/etAllergies"
-            android:text="Allergies"
+            android:hint="Allergies"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="48dp"/>
 
+        <TextView
+            android:id="@+id/tvMedications"
+            android:text="Medications"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
         <EditText
             android:id="@+id/etMedications"
-            android:text="Medications"
+            android:hint="Medications"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="48dp"/>
