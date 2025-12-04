@@ -1,19 +1,25 @@
 package com.example.hospimanagementapp; // App's root package
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity; // Base class for modern Activities with ActionBar support
 
 import android.content.Intent;  // Used to navigate between Activities
 import android.os.Bundle;       // Holds saved instance state for lifecycle
 import android.widget.Button;   // UI widget: Button
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView; // UI widget: TextView
 import android.widget.Toast;
 
+import com.example.hospimanagementapp.data.AppDatabase;
 import com.example.hospimanagementapp.ui.AdminLoginActivity;        // Screen for admin sign-in
 import com.example.hospimanagementapp.ui.AppointmentActivity;
 import com.example.hospimanagementapp.ui.PatientRegistrationActivity; // Screen to register patients
 import com.example.hospimanagementapp.ui.PatientSummaryActivity;
 import com.example.hospimanagementapp.util.SessionManager;          // Helper for simple session storage
 import com.example.hospimanagementapp.ui.BarcodeScannerActivity;
+
+import java.util.concurrent.Executors;
 
 public class MainActivity extends AppCompatActivity { // Entry Activity shown at app launch
 
@@ -61,11 +67,7 @@ public class MainActivity extends AppCompatActivity { // Entry Activity shown at
         btnBarcode.setOnClickListener(v ->
             startActivity(new Intent(this, BarcodeScannerActivity.class)));
 
-        btnPatientVitals.setOnClickListener(v -> {
-            Intent i = new Intent(this, PatientSummaryActivity.class);
-            i.putExtra(PatientSummaryActivity.EXTRA_NHS, "1234567890");
-            startActivity(i);
-        });
+        btnPatientVitals.setOnClickListener(v -> showManualNhsDialog());
 
         // Clear session and update the header (acts like a simple "log out")
         btnLogout.setOnClickListener(v -> {
@@ -83,6 +85,55 @@ public class MainActivity extends AppCompatActivity { // Entry Activity shown at
         } else {
             tvWelcome.setText("Signed in: " + email + " (" + role + ")"); // Show who is signed in
         }
+    }
+
+    private void showManualNhsDialog() {
+        LinearLayout layout = new LinearLayout(this);
+        layout.setOrientation(LinearLayout.VERTICAL);
+        layout.setPadding(50, 40, 50, 10);
+
+        EditText etNhs = new EditText(this);
+        etNhs.setHint("Enter NHS number");
+        etNhs.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);
+        layout.addView(etNhs);
+
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setTitle("Manual Entry - Patient Vitals")
+                .setView(layout)
+                .setPositiveButton("Check", null)
+                .setNegativeButton("Cancel", null)
+                .create();
+
+        dialog.setOnShowListener(dialogInterface -> {
+            Button btn = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
+            btn.setOnClickListener(v -> {
+                String nhs = etNhs.getText().toString().trim();
+                if (nhs.isEmpty()) {
+                    etNhs.setError("Required");
+                    return;
+                }
+
+                Executors.newSingleThreadExecutor().execute(() -> {
+                    int count = AppDatabase.getInstance(getApplicationContext())
+                            .patientDao()
+                            .countByNhs(nhs);
+
+                    runOnUiThread(() -> {
+                        if (count == 0) {
+                            etNhs.setError("Patient not found");
+                        } else {
+                            dialog.dismiss();
+
+                            Intent i = new Intent(this, PatientSummaryActivity.class);
+                            i.putExtra(PatientSummaryActivity.EXTRA_NHS, nhs);
+                            startActivity(i);
+                        }
+                    });
+                });
+            });
+        });
+
+        dialog.show();
     }
 
     @Override

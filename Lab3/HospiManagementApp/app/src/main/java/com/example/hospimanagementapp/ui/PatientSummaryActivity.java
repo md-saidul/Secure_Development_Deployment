@@ -34,6 +34,7 @@ public class PatientSummaryActivity extends AppCompatActivity {
         TextView tvMedications = findViewById(R.id.tvMedications);
         Button btnRecordVitals = findViewById(R.id.btnRecordVitals);
 
+
         String nhs = getIntent().getStringExtra(EXTRA_NHS);
         if (nhs == null) {
             nhs = "";
@@ -61,9 +62,10 @@ public class PatientSummaryActivity extends AppCompatActivity {
         });
 
         String finalNhs1 = nhs;
+
         btnRecordVitals.setOnClickListener(v -> {
             Intent i = new Intent(this, VitalsActivity.class);
-            i.putExtra(VitalsActivity.EXTRA_NHS, finalNhs);
+            i.putExtra(VitalsActivity.EXTRA_NHS, finalNhs1);
             startActivity(i);
         });
     }

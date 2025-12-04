@@ -64,6 +64,10 @@
         "source": "com.example.hospimanagementapp-main-48:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
+        "merged": "com.example.hospimanagementapp-debug-46:/layout_activity_edit_clinical_record.xml.flat",
+        "source": "com.example.hospimanagementapp-main-48:/layout/activity_edit_clinical_record.xml"
+    },
+    {
         "merged": "com.example.hospimanagementapp-debug-46:/layout_activity_admin_portal.xml.flat",
         "source": "com.example.hospimanagementapp-main-48:/layout/activity_admin_portal.xml"
     },

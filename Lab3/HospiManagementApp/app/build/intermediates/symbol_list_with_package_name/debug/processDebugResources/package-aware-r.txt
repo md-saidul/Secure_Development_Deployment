@@ -3247,6 +3247,7 @@ id btnRecordVitals
 id btnRefresh
 id btnRefreshList
 id btnRegisterStaff
+id btnSave
 id btnSavePatient
 id btnSaveVitals
 id btnStartDate
@@ -3336,11 +3337,14 @@ id escape
 id etAdminEmail
 id etAdminPin
 id etAdminSetupPin
+id etAllergies
+id etConditions
 id etDob
 id etEmail
 id etFullName
 id etGlucose
 id etHeartRate
+id etMedications
 id etNhs
 id etNhsBooking
 id etOxygenLevel
@@ -3839,6 +3843,7 @@ layout abc_tooltip
 layout activity_admin_login
 layout activity_admin_portal
 layout activity_appointment
+layout activity_edit_clinical_record
 layout activity_main
 layout activity_patient_registration
 layout activity_patient_summary

@@ -36,6 +36,10 @@
         "source": "com.example.hospimanagementapp-main-48:/layout/activity_admin_login.xml"
     },
     {
+        "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_edit_clinical_record.xml",
+        "source": "com.example.hospimanagementapp-main-48:/layout/activity_edit_clinical_record.xml"
+    },
+    {
         "merged": "com.example.hospimanagementapp-mergeDebugResources-45:/layout/activity_appointment.xml",
         "source": "com.example.hospimanagementapp-main-48:/layout/activity_appointment.xml"
     },
